@@ -16,8 +16,18 @@
     <h1>To do list</h1>
     <form id="todo-form">
       <input type="text" id="todo-input" placeholder="Añade una tarea nueva" required />
-      <button type="submit" id="add-btn">Add</button>
+      <button type="submit" id="add-btn">Añadir</button>
+      <div class="main-options-container">
+        <button type="button" id="main-options-btn">
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </button>
+        <div class="main-options-menu" id="main-options-menu">
+          <button id="delete-completed-btn">Eliminar tareas realizadas</button>
+          <button id="delete-all-btn">Eliminar todas las tareas</button>
+        </div>
+      </div>
     </form>
+
     <ul id="todo-list"></ul>
   </div>
   <!-- Modal de edición -->

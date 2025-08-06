@@ -18,12 +18,12 @@ h1 {
   text-align: center;
 }
 
-#add-btn {
+#add-btn, #main-options-btn  {
   border-color: transparent;
   border-radius: 5px;
 }
 
-#add-btn:hover {
+#add-btn:hover, #main-options-btn:hover {
   background-color: darkgrey;
   cursor: pointer;
 }
@@ -176,4 +176,39 @@ li.completed span {
 
 .modal-actions button:hover {
   background-color: darkgrey;
+}
+
+.main-options-container {
+  position: relative;
+}
+
+.main-options-menu {
+  position: absolute;
+  top: 35px;
+  left: 30px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: none;
+  flex-direction: column;
+  z-index: 10;
+
+}
+
+.main-options-menu button {
+  color: red;
+  padding: 8px 12px;
+  border: none;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+  width: 100%;
+}
+
+.main-options-menu button:hover {
+  background-color: #f0f0f0;
+}
+
+.main-options-menu button + button{
+  border-top: 1px solid #ccc;
 }
